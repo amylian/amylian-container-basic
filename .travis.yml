@@ -18,4 +18,4 @@ install:
   - travis_retry composer install --prefer-dist --no-interaction
 
 script:
-  - vendor./bin/phpunit $PHPUNIT_FLAGS
+  - vendor/bin/phpunit $PHPUNIT_FLAGS
