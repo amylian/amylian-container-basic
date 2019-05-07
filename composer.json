@@ -1,6 +1,7 @@
 {
-	"name" : "amylian/amylian-container-basic",
-	"description" : "ATTENTION EXPERIMENTAL! Basic Container",
+	"name" : "amylian/container-basic",
+        "keywords": ["container", "psr", "psr-11"],
+	"description" : "Basic PSR-11 Container Implementation",
 	"type" : "library",
 	"minimum-stability" : "dev",
 	"prefer-stable" : true,
@@ -13,19 +14,20 @@
 	],
 	"require" : {
 		"php" : "^7.1",
-                "amylian/amylian-utils": "*"
+                "amylian/amylian-utils": "*",
+                "psr/container": "^1.0"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "*"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Amylian\\Container\\" : "src/"
+			"Amylian\\Container\\Basic\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"Amylian\\Container\\Tests\\" : "tests/"
+			"Amylian\\Container\\Basic\\Testing\\" : "tests/"
 		}
 	},
 	"extra" : {
